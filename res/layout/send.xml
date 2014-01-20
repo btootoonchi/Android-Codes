@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvQuestions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvsQuestions"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <RadioGroup
+        android:id="@+id/rgAnswers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/rYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rsYes" />
+
+        <RadioButton
+            android:id="@+id/rNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rsNo" />
+
+        <RadioButton
+            android:id="@+id/rMaybe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rsMaybe" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bsReturn" />
+
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvString" />
+
+</LinearLayout>

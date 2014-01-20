@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mythirdapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!--
+        <activity
+            android:name="com.example.mythirdapp.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+        <activity
+            android:name="com.example.mythirdapp.Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.mythirdapp.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+
+                <!-- <action android:name="com.example.mythirdapp.STARTINGPOINT" /> -->
+                <action android:name="com.example.mythirdapp.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.mythirdapp.Menu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.mythirdapp.MENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.mythirdapp.TextPlay"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.mythirdapp.Email"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.mythirdapp.Camera"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.mythirdapp.Data"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.mythirdapp.OpenedClass"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.mythirdapp.OPENED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.mythirdapp.AboutUs"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+                <action android:name="com.example.mythirdapp.ABOUT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.mythirdapp.Prefs"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.mythirdapp.PREFS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.mythirdapp.Graphic"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.mythirdapp.GraphicSurface"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.mythirdapp.Sound"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.mythirdapp.Slider"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.mythirdapp.Tabs"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.mythirdapp.SimpleBrowser"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.mythirdapp.Flipper"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.mythirdapp.SharedPrefs"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.mythirdapp.InternalData"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.mythirdapp.ExternalData"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.mythirdapp.SQLiteExample"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.mythirdapp.SQLView"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.mythirdapp.SQLVIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

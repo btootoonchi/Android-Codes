@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="@string/hello_world"
+        android:textSize="45sp" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bAdd"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/bsAdd" />
+
+        <Button
+            android:id="@+id/bSub"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:text="@string/bsSubtract" />
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:layout_below="@+id/bAdd"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_world" />
+
+    </LinearLayout>
+
+</RelativeLayout>
